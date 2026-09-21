@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#02030a">
+  <meta name="description" content="Un universo interactivo hecho de flores amarillas, luz y pétalos.">
+  <title>Jardín Dorado · Flores 3D</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='5' fill='%238c5000'/%3E%3Cg fill='%23ffd84a'%3E%3Cellipse cx='16' cy='6' rx='4' ry='7'/%3E%3Cellipse cx='16' cy='26' rx='4' ry='7'/%3E%3Cellipse cx='6' cy='16' rx='7' ry='4'/%3E%3Cellipse cx='26' cy='16' rx='7' ry='4'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="universe" aria-label="Jardín interactivo: toca cualquier lugar para crear una explosión de flores amarillas"></canvas>
+  <div class="vignette" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
+  <header class="topbar"><a class="brand" href="#" aria-label="Jardín Dorado, inicio"><i></i> JARDÍN <span>DORADO</span></a><div class="actions"><button class="pill" id="motion" type="button" aria-pressed="true"><span>●</span> MOVIMIENTO</button><button class="pill" id="sound" type="button" aria-label="Activar sonido" aria-pressed="false"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span><b>SONIDO</b></button></div></header>
+  <main>
+    <section class="hero" id="hero" aria-labelledby="title"><p class="eyebrow"><span></span> UN UNIVERSO HECHO DE FLORES</p><h1 id="title">Estas flores son para ti<br><em>Isabel</em></h1><p class="intro">Toca la oscuridad y hazla florecer.<br class="desktop"> Click genera una explosion Isabel</p><button class="journey" id="journey" type="button"><span class="orbit-icon">✦</span><span>LIBERAR TODAS LAS FLORES</span><i>→</i></button><p class="hint"><span class="mouse"></span> TOCA · ARRASTRA · MUEVE EL CURSOR</p></section>
+    <div class="chapter" id="chapter" aria-live="polite"><span id="chapterNumber">01</span><div><small>FLORECIMIENTO</small><strong id="chapterTitle">EL PRIMER BROTE</strong></div></div>
+    <aside class="message" id="message" aria-hidden="true"><button id="closeMessage" aria-label="Cerrar mensaje">×</button><span class="message-orbit"><i></i>✦</span><small>ENTRE MILLONES DE FLORES</small><p>Este jardín no es un video.<br>Ninguna otra flor podría representar mejor todo lo bonito que provocas en mí.</p><strong>Todas las flores amarillas son para ti.</strong><div class="coordinates">TOCA EL FONDO PARA SEGUIR CREANDO</div></aside>
+  </main>
+  <div class="progress" aria-hidden="true"><i id="progress"></i></div><div class="depth-label" aria-hidden="true"><span></span> JARDÍN INTERACTIVO</div>
+  <script src="script.js"></script>
+</body></html>
